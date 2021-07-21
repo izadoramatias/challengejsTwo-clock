@@ -1,0 +1,107 @@
+:root {
+    /* COLORS */
+    --bg-color: #ffd54f;
+    --card-bgColor: #f5f9ff;
+    --font-color: rgb(20, 20, 20);
+
+    /* FONTS */
+    --title-font: 700 2.5rem 'Poppins', sans-serif;
+    --clock-font: 500 3rem 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    /* max-height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: var(--font-color);
+    margin-bottom: 20px;
+    font: var(--title-font);
+}
+
+.relogio {
+    width: 18.75rem;
+    height: 18.75rem;
+    border: 5px solid var(--font-color);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.riscos {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+.risco {
+    width: 9.0625rem;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+.risco .ponto {
+    width: 0.9375rem;
+    height: 100%;
+    background-color: var(--font-color);
+}
+
+.ponteiros {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+}
+.p {
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.p_s {
+    width: 100px;
+    height: 3px;
+    background-color: #F00;
+}
+.p_m {
+    width: 120px;
+    height: 7px;
+    background-color: #FFF;
+}
+.p_h {
+    width: 70px;
+    height: 10px;
+    background-color: #FFF;
+}
+.encaixe {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.digital {
+    color: var(--card-bgColor);
+    font-size: 2.5rem;
+    margin-top: 1.25rem;
+    font: var(--clock-font);
+}
